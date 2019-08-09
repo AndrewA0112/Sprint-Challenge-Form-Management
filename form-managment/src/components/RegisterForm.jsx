@@ -20,7 +20,7 @@ const RegisterForm = ({ errors, touched, status, history }) => {
 
     return (
         <div>
-            <h1>Register</h1>
+            <h1 data-testid='registerTitle'>Register</h1>
             <Form className='registerForm'>
                 <Field type='text' name='username' placeholder='Username' className='registerFormField'/>
                 {touched.username && errors.username && (
@@ -30,7 +30,7 @@ const RegisterForm = ({ errors, touched, status, history }) => {
                 {touched.password && errors.password && (
                     <p className='errorMessage'>{errors.password}</p>
                 )}
-                <button type='submit'>Register</button>
+                <button data-testid='registerBtn' type='submit'>Register</button>
             </Form>
         </div>
     )

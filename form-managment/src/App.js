@@ -8,10 +8,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Route exact path='/' component={UserListing}/>
-      <Route path='/register' component={RegisterForm}/>
-    </div>
+      <div className="App">
+        <Route exact path='/' component={UserListing}/>
+        <Route path='/register' component={RegisterForm}/>
+      </div>
   );
 }
 
